@@ -17,18 +17,26 @@ public class AddressBookSystemUC7 {
 
             ArrayList<String> Address=new ArrayList<>();
 
+            //UC-9 Ability to view Persons by City or State -
+            // Maintain Dictionary of City and Zipcode
+            ArrayList<String> zipCode=new ArrayList<>();
+
             names.add("Aaron");
             Address.add("California");
-
+            zipCode.add("678997");
             names.add("Fred");
             Address.add("Arizona");
+            zipCode.add("746506");
             names.add("Jonas");
             Address.add("NewYork");
+            zipCode.add("994567");
+
 
 
             for (int i = 0; i < names.size(); i++) {
                 System.out.println("Name   : "+names.get(i));
                 System.out.println("Address: "+Address.get(i));
+                System.out.println("zipcode: "+zipCode.get(i));
             }
         }
     }
