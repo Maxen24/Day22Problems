@@ -21,15 +21,24 @@ public class AddressBookSystemUC7 {
             // Maintain Dictionary of City and Zipcode
             ArrayList<String> zipCode=new ArrayList<>();
 
+            //UC-10 Ability to get number of contact persons i.e.
+            //count by City or State
+            ArrayList<String> ContactNumber = new ArrayList<>();
+
+            System.out.println("---------Welcome to the Address BooK---------");
+
             names.add("Aaron");
             Address.add("California");
             zipCode.add("678997");
+            ContactNumber.add("0845 50 50 50");
             names.add("Fred");
             Address.add("Arizona");
             zipCode.add("746506");
+            ContactNumber.add("00 49 12345");
             names.add("Jonas");
             Address.add("NewYork");
             zipCode.add("994567");
+            ContactNumber.add("890 67 56 666");
 
 
 
@@ -37,6 +46,7 @@ public class AddressBookSystemUC7 {
                 System.out.println("Name   : "+names.get(i));
                 System.out.println("Address: "+Address.get(i));
                 System.out.println("zipcode: "+zipCode.get(i));
+                System.out.println("Number: " + ContactNumber.get(i));
             }
         }
     }
